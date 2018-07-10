@@ -1,0 +1,19 @@
+<div class="row text-center " style="display:flex; flex-wrap:wrap;">
+        <div class="col-md-3 col-sm-6 " ng-repeat="item in items">
+           <div class="img-thumbnail">
+             <img src="{{item.image}}" class="img-thumbnail">
+             <div class="caption">
+                  <h4>
+                    {{item.name}}
+                  </h4>
+                  <h5 class="pull-right">{{item.price}}</h5>
+             </div>
+             <p>
+                  <button ng-click="addItem(item._id)">add to cart</button>
+             </p>
+           </div>
+        </div>
+  </div>
+  <!-- <ul ng-repeat="item in items">
+    <li>{{item.name}}</li>
+  </ul> -->

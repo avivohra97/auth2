@@ -34,7 +34,7 @@ onLogin.controller("mainCtrl",function(Auth,AuthToken,$location,$timeout,$rootSc
         	console.log(data.data.success);
         	if(data.data.success){
         		this.sucessMessage=data.data.message;
-        		$location.path("/about");
+        		$location.path("/home");
                         app.loginData={};
         	}else{
         		this.errorMessage=data.data.message;
@@ -48,5 +48,5 @@ onLogin.controller("mainCtrl",function(Auth,AuthToken,$location,$timeout,$rootSc
                         $location.path('/')
                 },2000);
         }
-
+       
 })

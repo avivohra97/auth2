@@ -12,14 +12,21 @@
   "dependencies": {
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.18.2",
+    "connect-mongo": "^2.0.1",
     "express": "^4.16.2",
     "express-session": "^1.15.6",
+    "instamojo-nodejs": "0.0.5",
     "jsonwebtoken": "^8.2.0",
+    "localtunnel": "^1.9.0",
+    "mailgun-js": "^0.20.0",
     "mongoose": "^5.0.9",
+    "mongoose-title-case": "0.0.4",
+    "mongoose-validator": "^2.0.2",
     "morgan": "^1.9.0",
     "npm": "^5.7.1",
     "passport": "^0.4.0",
     "passport-facebook": "^2.1.1",
-    "passport-twitter": "^1.0.4"
+    "passport-twitter": "^1.0.4",
+    "request": "^2.87.0"
   }
 }

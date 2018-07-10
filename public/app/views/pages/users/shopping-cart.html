@@ -1,0 +1,28 @@
+<div>
+	<ul ng-repeat="item in items">
+		<li>
+			<span>{{item.qty}}
+			</span>
+			<strong>{{item.item.name}}
+			</strong>
+			<span>{{item.cost}}
+			</span>
+			<div>
+				<button class="btn btn-primary btn-xs dropdown-toggle" type="button" data-toggle="dropdown">action<span class=
+					"caret"></span>
+				</button>
+				<ul class="dropdown-menu">
+					<li><a href="#">reduce by 1</a>
+					</li>
+					<li><a href="#">reduce all</a>
+					</li>
+				</ul>
+			</div>
+		</li>
+	</ul>
+	<p>total price is :{{totalPrice}}</p>
+	<button  class="btn btn-primary"><a href="/checkout">checkout with instamojo</a></button>
+	<button  class="btn btn-primary"><a href="/checkout">checkout with cash on delivery</a></button>
+	<!-- <a href="https://test.instamojo.com/@avivohra97/l9bebd0a41e0f40bcaf82a7bb39b7c26b/" rel="im-checkout" data-behaviour="remote" data-style="light" data-text="Checkout With Instamojo">insta</a> -->
+<script src="https://js.instamojo.com/v1/button.js"></script>
+</div>
